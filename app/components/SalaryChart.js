@@ -21,6 +21,7 @@ const historicalData = [
   { year: 2010, salary: 46000 },
   { year: 2020, salary: 56000 },
   { year: 2023, salary: 65000 },
+  { year: 2024, salary: 62000 },
 ];
 
 // Format large numbers with commas

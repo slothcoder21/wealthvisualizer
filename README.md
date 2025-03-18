@@ -31,3 +31,4 @@ You can update your inputs or pause the visualization at any time.
 ## Getting Started
 
 To run this project locally:
+    npm run dev

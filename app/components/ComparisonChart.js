@@ -29,12 +29,11 @@ const formatCurrency = (value) => {
 
 export default function ComparisonChart() {
   return (
-    <div className="w-full h-64 bg-white p-4 rounded-lg shadow-sm">
-      <h3 className="text-lg font-medium mb-4">Average US Salaries by Profession</h3>
-      <ResponsiveContainer width="100%" height="80%">
+    <div className="w-full h-full">
+      <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={comparisonData}
-          margin={{ top: 10, right: 30, left: 20, bottom: 0 }}
+          margin={{ top: 10, right: 30, left: 20, bottom: 5 }}
         >
           <CartesianGrid strokeDasharray="3 3" opacity={0.2} />
           <XAxis dataKey="job" />

@@ -1,12 +1,13 @@
 import Dashboard from "./components/Dashboard";
 import SmoothDropdown from "./components/SmoothDropdown";
+import DashboardLayout from "./components/DashboardLayout";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 p-4 md:p-8">
+    <DashboardLayout>
       <Dashboard />
       
-      <div className="max-w-6xl mx-auto mt-8 space-y-4">
+      <div className="mt-8 space-y-4">
         <SmoothDropdown title="About Salary Visualization">
           <div className="p-4 text-sm">
             <p>This dashboard visualizes how quickly money accumulates based on your salary. Enter any amount and see in real-time how your earnings grow second by second.</p>
@@ -31,6 +32,6 @@ export default function Home() {
           </div>
         </SmoothDropdown>
       </div>
-    </div>
+    </DashboardLayout>
   );
 }

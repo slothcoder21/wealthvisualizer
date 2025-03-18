@@ -31,12 +31,11 @@ const formatCurrency = (value) => {
 
 export default function SalaryChart() {
   return (
-    <div className="w-full h-64 bg-white p-4 rounded-lg shadow-sm">
-      <h3 className="text-lg font-medium mb-4">Historical US Median Annual Salary</h3>
-      <ResponsiveContainer width="100%" height="80%">
+    <div className="w-full h-full">
+      <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           data={historicalData}
-          margin={{ top: 10, right: 30, left: 20, bottom: 0 }}
+          margin={{ top: 10, right: 30, left: 20, bottom: 5 }}
         >
           <defs>
             <linearGradient id="colorSalary" x1="0" y1="0" x2="0" y2="1">

@@ -26,3 +26,24 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
 }
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Scaling classes for flip numbers */
+.scale-90 {
+  transform: scale(0.9);
+  transform-origin: center;
+}
+
+.scale-80 {
+  transform: scale(0.8);
+  transform-origin: center;
+}
